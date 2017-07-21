@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 公用ActionBar -->
+    <declare-styleable name="CommonAppBar">
+        <attr name="title_text" />
+        <attr name="right_text" />
+        <attr name="left_image" />
+        <attr name="right_image" />
+        <attr name="right_type">
+            <enum name="text" value="0"></enum>
+            <enum name="image" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!-- 自动布局 -->
+    <declare-styleable name="AutoLayout_Layout">
+
+        <attr name="layout_auto_basewidth">
+            <flag name="width" value="1"></flag>
+            <flag name="height" value="2"></flag>
+            <flag name="textSize" value="4"></flag>
+            <flag name="padding" value="8"></flag>
+            <flag name="margin" value="16"></flag>
+            <flag name="marginLeft" value="32"></flag>
+            <flag name="marginTop" value="64"></flag>
+            <flag name="marginRight" value="128"></flag>
+            <flag name="marginBottom" value="256"></flag>
+            <flag name="paddingLeft" value="512"></flag>
+            <flag name="paddingTop" value="1024"></flag>
+            <flag name="paddingRight" value="2048"></flag>
+            <flag name="paddingBottom" value="4096"></flag>
+        </attr>
+
+        <attr name="layout_auto_baseheight">
+            <flag name="width" value="1"></flag>
+            <flag name="height" value="2"></flag>
+            <flag name="textSize" value="4"></flag>
+            <flag name="padding" value="8"></flag>
+            <flag name="margin" value="16"></flag>
+            <flag name="marginLeft" value="32"></flag>
+            <flag name="marginTop" value="64"></flag>
+            <flag name="marginRight" value="128"></flag>
+            <flag name="marginBottom" value="256"></flag>
+            <flag name="paddingLeft" value="512"></flag>
+            <flag name="paddingTop" value="1024"></flag>
+            <flag name="paddingRight" value="2048"></flag>
+            <flag name="paddingBottom" value="4096"></flag>
+            <flag name="minWidth" value="8192"></flag>
+            <flag name="maxWidth" value="16384"></flag>
+            <flag name="minHeight" value="32768"></flag>
+            <flag name="maxHeight" value="65536"></flag>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="MetroLayout">
+        <attr name="metro_divider" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+    </declare-styleable>
+
+    <!-- 公用CommonWidget -->
+    <declare-styleable name="CommonWidget">
+        <attr name="left_image" />
+        <attr name="right_image" />
+    </declare-styleable>
+
+    <!-- 公用CommonTextWidget -->
+    <declare-styleable name="CommonTextWidget">
+        <attr name="left_text" />
+        <attr name="right_text" />
+        <attr name="summary_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommonAppBarLayout">
+        <attr name="resId" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <attr name="title_text" format="string" />
+    <attr name="left_text" format="string"/>
+    <attr name="right_text" format="string" />
+    <attr name="left_image" format="reference" />
+    <attr name="right_image" format="reference" />
+
+</resources>

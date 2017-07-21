@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@drawable/line"
+    android:showDividers="middle|end">
+
+    <com.zss.library.viewpager.AdViewPager
+        android:id="@+id/adViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </com.zss.library.viewpager.AdViewPager>
+
+    <com.zss.library.viewpager.CycleViewPager
+        android:id="@+id/cycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </com.zss.library.viewpager.CycleViewPager>
+
+</LinearLayout>

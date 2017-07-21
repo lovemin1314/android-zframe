@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- 自定义对话框样式 -->
+    <style name="CommonDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/trans</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ToastAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_in</item>
+        <item name="android:windowExitAnimation">@anim/toast_out</item>
+    </style>
+
+    <style name="InoutFormBottom" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/anim_entry_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_leave_from_bottom</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
