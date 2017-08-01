@@ -14,6 +14,7 @@ import com.zss.library.activity.ZFrameActivity;
 import com.zss.library.adapter.recyclerview.CommonAdapter;
 import com.zss.library.adapter.recyclerview.ViewHolder;
 import com.zss.library.activity.PhotoPickerActivity;
+import com.zss.library.https.OkHttpUtils;
 import com.zss.library.utils.CommonToastUtils;
 
 import java.util.ArrayList;
@@ -83,7 +84,8 @@ public class MainActivity extends BaseActivity {
                     openBrowser();
                     return;
                 } else if(mStr.equals("https")) {
-                    intent.putExtra(ZFrameActivity.CLASS, TestProgressDialogFragment.class);
+                    CommonToastUtils.showInCenterToast(getActivity(), "没有编写例子，com.zss.library.https.OkHttpUtils");
+                    return;
                 }
                 startActivity(intent);
             }
