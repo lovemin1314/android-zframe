@@ -86,6 +86,8 @@ public class MainActivity extends BaseActivity {
                 } else if(mStr.equals("https")) {
                     CommonToastUtils.showInCenterToast(getActivity(), "没有编写例子，com.zss.library.https.OkHttpUtils");
                     return;
+                } else if(mStr.equals("JsonRpc")) {
+                    intent.putExtra(ZFrameActivity.CLASS, TestJsonRpcFragment.class);
                 }
                 startActivity(intent);
             }
@@ -146,7 +148,8 @@ public class MainActivity extends BaseActivity {
                 "AdViewPager",
                 "BrowserPager",
                 "PhotoPicker",
-                "https"
+                "https",
+                "JsonRpc"
         };
         String [] summarys = new String[]{
                 "TabLayout首页效果",
@@ -165,7 +168,8 @@ public class MainActivity extends BaseActivity {
                 "广告轮播，无限轮播",
                 "预览图片（支持左右滑动放大缩小)",
                 "仿微信拍照和文件预览",
-                "支持https访问和Glide加载图片https访问"
+                "支持https访问和Glide加载图片https访问",
+                "JsonRpc远程调用"
         };
         for(int i=0; i<titles.length; i++){
             datas.add(new String[]{titles[i], summarys[i]});
