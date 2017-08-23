@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">ZFrame</string>
+    <string name="colse">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="tip">提示</string>
+
+    <string name="photos_title">图片</string>
+    <string name="photos_num">%1$d张</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="commit_num">确定(%1$d/%2$d)</string>
+
     <string name="cube_ptr_pull_up">上拉</string>
     <string name="cube_ptr_pull_up_to_load">上拉加载</string>
     <string name="cube_ptr_release_to_load">释放加载</string>
