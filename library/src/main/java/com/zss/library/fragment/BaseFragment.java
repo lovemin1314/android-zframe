@@ -217,6 +217,7 @@ public abstract class BaseFragment extends Fragment {
 				callBack.onDenied();
 			}
 		}
+
 	}
 
 	public void setStatusBarColor(int colorId) {

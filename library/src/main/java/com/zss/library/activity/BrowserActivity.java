@@ -48,6 +48,7 @@ public class BrowserActivity extends BaseActivity {
     @Override
     public void setTopBar() {
         super.setTopBar();
+        setStatusBarColor(getColorValue(R.color.black));
         removeAppBar();
     }
 

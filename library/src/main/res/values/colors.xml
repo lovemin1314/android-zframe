@@ -9,7 +9,6 @@
 	<color name="trans_b">#77000000</color> <!-- 半透明 -->
 	<color name="blue">#ff33b5e5</color><!-- 蓝色 -->
 
-	<color name="tool_bar_bg">#333333</color><!--公用ActionBar背景色 -->
 	<color name="bg">#ffffff</color><!--背景色 -->
 	<color name="line">#e2e5e5</color><!-- 线条色 -->
 	<color name="text_color">#666666</color><!-- 文本色 -->

@@ -54,14 +54,14 @@ public abstract class BaseActivity extends AutoLayoutActivity {
 	private String fromTagBack = ""; // 从哪个Tag返回过来
 	private int requestCode;
 	private PermissionCallBack callBack;
-	private boolean isOutsideCancelSoft = false; //点击不是EditView隐藏键盘
+	private boolean touchOutsideCancelSoft = false; //点击不是EditView隐藏键盘
 
-	public boolean isOutsideCancelSoft() {
-		return isOutsideCancelSoft;
+	public boolean isTouchOutsideCancelSoft() {
+		return touchOutsideCancelSoft;
 	}
 
-	public void setOutsideCancelSoft(boolean outsideCancelSoft) {
-		isOutsideCancelSoft = outsideCancelSoft;
+	public void setTouchOutsideCancelSoft(boolean touchOutsideCancelSoft) {
+		this.touchOutsideCancelSoft = touchOutsideCancelSoft;
 	}
 
 	@Override
@@ -286,7 +286,7 @@ public abstract class BaseActivity extends AutoLayoutActivity {
      */
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
-		if (isOutsideCancelSoft && ev.getAction() == MotionEvent.ACTION_DOWN) {
+		if (isTouchOutsideCancelSoft() && ev.getAction() == MotionEvent.ACTION_DOWN) {
 			 //获取当前拥有用户焦点的view
 			View v = getCurrentFocus();
 			if (isShouldHideInput(v, ev)) {
@@ -358,15 +358,8 @@ public abstract class BaseActivity extends AutoLayoutActivity {
 				callBack.onDenied();
 			}
 		}
+		getCurrentFragmnet().onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-		List<Fragment> fragments = getSupportFragmentManager().getFragments();
-		if (fragments != null) {
-			for (Fragment fragment : fragments) {
-				if (fragment != null) {
-					fragment.onRequestPermissionsResult(requestCode, permissions, grantResults);
-				}
-			}
-		}
 	}
 
 	public void setInnerLayoutFullScreen() {
