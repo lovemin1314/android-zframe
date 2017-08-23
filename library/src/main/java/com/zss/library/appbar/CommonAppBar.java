@@ -98,4 +98,8 @@ public class CommonAppBar extends AppBarLayout {
 		toolbar.getMenu().clear();
 	}
 
+	public Toolbar getToolbar(){
+		return toolbar;
+	}
+
 }
